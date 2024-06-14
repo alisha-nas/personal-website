@@ -9,7 +9,7 @@
   height: 70px;
   min-height: 70px;
   width: calc(100% - 1.5rem);
-  background-color: #fff;
+  background-color: black;
   padding: 0 1rem;
   box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
 }
@@ -17,4 +17,10 @@
 li {
     display: inline-block;
     margin: 0 10px;
+    color:white;
+}
+
+li:hover {
+  cursor: pointer;
+  color:yellow;
 }
