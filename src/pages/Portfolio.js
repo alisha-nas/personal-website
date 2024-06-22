@@ -1,6 +1,6 @@
 const Portfolio = () => {
   return (
-    <h1 style={{color:'white'}}>Portfolio</h1>
+    <h1 id = 'portfolio-section' class='Container' style={{color:'black'}}>Portfolio</h1>
   )
 
 }

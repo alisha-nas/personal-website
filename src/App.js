@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './shared-components/navbar';
 import HomePage from './pages/Homepage';
@@ -8,12 +7,9 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import ShootingStars from './assets/Shooting-Star';
 
-
-
 function App() {
   return (
     <div className="App">
-      <ShootingStars></ShootingStars>
       <Navbar></Navbar>
       <HomePage></HomePage>
       <About></About>

@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <h1 style={{color:'white'}}>About</h1>
+    <h1 id = 'about-section' style={{color:'black'}}>About</h1>
   )
 
 }

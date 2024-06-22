@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <h1 style={{color:'white'}}>Contact</h1>
+    <h1 id = 'contact-section' style={{color:'black'}}>Contact</h1>
   )
 
 }
