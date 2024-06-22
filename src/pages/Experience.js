@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <h1>Experience</h1>
+    <h1 style={{color:'white'}}>Experience</h1>
   )
 
 }

@@ -6,12 +6,14 @@ import Contact from './pages/Contact';
 import Experience from './pages/Experience';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
+import ShootingStars from './assets/Shooting-Star';
 
 
 
 function App() {
   return (
     <div className="App">
+      <ShootingStars></ShootingStars>
       <Navbar></Navbar>
       <HomePage></HomePage>
       <About></About>

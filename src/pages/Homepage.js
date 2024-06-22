@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div class = "container">
       <div class = "typewriter">
-        <h1>Hi, I'm Alisha</h1>
+        <h1 style={{color:'white'}}>Hi, I'm Alisha</h1>
       </div>
     </div>
   )
