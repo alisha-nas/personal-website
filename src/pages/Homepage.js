@@ -27,7 +27,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className='landing-container'>
+    <div id="home-section"  className='landing-container'>
       <div className='landing-text'>
         <h1 className='greeting-text'>{displayedText}</h1>
         <h2 className='subheading-text'>I'm an aspiring Software Developer. I am currently interning at Bell and am incoming at Symend.</h2>

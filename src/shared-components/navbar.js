@@ -2,8 +2,13 @@ import './navbar.css';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
+
+  const text = "<Alisha Nasir/>"
   return (
     <nav className="navBar">
+      <div className="left-section">
+        <Link to="home-section" spy={true} smooth={true} offset={-50} duration={500}>{text}</Link>
+      </div>
       <ul className="navLinks">
         <li>
           <Link to="about-section" spy={true} smooth={true} offset={-50} duration={500}>About</Link>

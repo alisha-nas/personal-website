@@ -1,25 +1,52 @@
 .navBar {
   display: flex;
+  justify-content: space-between; /* Align items to the ends */
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
-  top: -5px;
+  top: 0;
   z-index: 2;
   height: 70px;
   min-height: 70px;
-  width: calc(100% - 1.5rem);
+  width: 100%; /* Full width of the viewport */
   background-color: black;
   padding: 0 1rem;
-  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
+  color: white; /* Ensure text color is white */
 }
 
-li {
-    display: inline-block;
-    margin: 0 10px;
-    color:white;
+.navLinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-li:hover {
+.navLinks li {
+  margin: 0 10px;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks li a:hover {
+  color: yellow;
   cursor: pointer;
-  color:yellow;
+}
+
+.left-section {
+  margin-left: 10px; /* Adjust as needed */
+}
+
+.left-section a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left-section a:hover {
+  color: yellow;
+  cursor: pointer;
 }
