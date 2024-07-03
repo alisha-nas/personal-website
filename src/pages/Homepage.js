@@ -30,6 +30,7 @@ export default function HomePage() {
     <div className='landing-container'>
       <div className='landing-text'>
         <h1 className='greeting-text'>{displayedText}</h1>
+        <h2 className='subheading-text'>I'm an aspiring Software Developer with a passion for creating innovative solutions and learning new technologies.</h2>
       </div>
       <div className='landing-svg'>
         <img src={waving} alt="Waving hand" />
