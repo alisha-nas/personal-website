@@ -1,17 +1,15 @@
-.navBar {
+.navbar {
   display: flex;
-  justify-content: space-between; /* Align items to the ends */
+  justify-content: space-between;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 1000;
   height: 70px;
-  min-height: 70px;
-  background-color: white;
-  padding: 0 1rem;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
-  color: black; /* Ensure text color is white */
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+  padding: 0 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  backdrop-filter: blur(10px); /* Blurred background effect (for modern browsers) */
 }
 
 .navLinks {
@@ -22,21 +20,23 @@
 }
 
 .navLinks li {
-  margin: 0 10px;
+  margin: 0 15px; /* Increased margin for better spacing */
 }
 
 .navLinks li a {
   color: black;
   text-decoration: none;
-}
-
-.navLinks li a:hover {
-  color: yellow;
+  font-weight: bold;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
 
+.navLinks li a:hover {
+  color: #00C853; /* Green hover color */
+}
+
 .left-section {
-  margin-left: 10px; /* Adjust as needed */
+  margin-left: 10px;
 }
 
 .left-section a {
@@ -46,6 +46,5 @@
 }
 
 .left-section a:hover {
-  color: yellow;
-  cursor: pointer;
+  color: #00C853; /* Green hover color */
 }

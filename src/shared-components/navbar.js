@@ -2,10 +2,10 @@ import './navbar.css';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
-
-  const text = "<Alisha Nasir/>"
+  const text = "<Alisha Nasir/>";
+  
   return (
-    <nav className="navBar">
+    <nav className="navbar">
       <div className="left-section">
         <Link to="home-section" spy={true} smooth={true} offset={-50} duration={500}>{text}</Link>
       </div>
