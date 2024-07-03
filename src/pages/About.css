@@ -1,0 +1,25 @@
+#about-section {
+  background-color: blue;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+#about-section h1 {
+  color: #333;
+}
+
+#about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}

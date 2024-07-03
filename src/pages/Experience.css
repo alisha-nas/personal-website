@@ -1,0 +1,28 @@
+#experience-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+#experience-section h1 {
+  color: #333;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  margin-bottom: 5px;
+}
+
+.experience-date {
+  font-style: italic;
+  color: #666;
+}
+
+.experience-description {
+  line-height: 1.6;
+}
