@@ -1,58 +1,129 @@
 /* Homepage.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Ensure shooting stars don't create horizontal scrollbars */
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
 .landing-container {
-  background: red;
-  padding: 70px;
-  padding-bottom: 500px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 70px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+.landing-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .landing-text {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  max-width: 600px;
+}
+
+.hello-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .greeting-text {
-  text-align: left;
-  font-size: 2rem;
-  font-family: 'Courier New', Courier, monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid black;
-  animation: blink-caret 0.75s step-end infinite;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .subheading-text {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.5rem;
+  color: #00C853;
   margin-top: 10px;
 }
 
+.contact-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00C853;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .landing-svg {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .landing-svg img {
-  width: 150px;  /* Adjust width as needed */
-  height: 150px; /* Adjust height as needed */
+  width: 300px;  /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
 }
 
+/* Shooting Star Animation */
 @keyframes blink-caret {
   from, to {
     border-color: transparent;
   }
   50% {
-    border-color: black;
+    border-color: white;
   }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateY(0) translateX(0) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100vw) scale(1);
+    opacity: 0;
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(white, transparent);
+  opacity: 0;
+  animation: shooting-star 1.5s ease-in-out infinite;
+}
+
+.shooting-star:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.shooting-star:nth-child(3) {
+  animation-delay: 1s;
+}
+
+/* Add more stars with different delays as needed */
+
+/* Ensure the entire page can scroll */
+body, html {
+  height: 100%;
+}
+
+#home-section {
+  min-height: 100vh;
 }
