@@ -3,22 +3,93 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.about-content {
+  max-width: 1000px; /* Increased max-width for responsiveness */
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 40px; /* Increased margin for spacing */
 }
 
 #about-section h1 {
   color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 #about-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+.skills-graphic {
+  flex: 1;
 }
 
 .skills-list {
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
 }
 
 .skills-list li {
+  font-size: 1.1rem;
+  color: #333;
   margin-bottom: 8px;
+}
+
+.skills-list li::before {
+  content: "\2022"; /* Use a bullet point for each list item */
+  color: #00C853; /* Customize bullet point color */
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.skill {
+  margin-bottom: 16px; /* Increased margin between skills */
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #00C853;
+}
+
+/* Adjustments for positioning */
+@media (min-width: 1200px) {
+  .about-content {
+    max-width: 1200px; /* Adjust max-width as needed */
+  }
+  
+  .about-text {
+    margin-right: 80px; /* Increased margin for wider screens */
+  }
+  
+  .skills-graphic {
+    margin-left: 40px; /* Adjust margin for spacing */
+  }
 }
