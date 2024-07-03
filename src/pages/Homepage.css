@@ -1,0 +1,52 @@
+.landing-container {
+  background-color: red;
+  padding: 70px;
+  padding-bottom: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-text {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-text {
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.landing-svg {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-svg img {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
