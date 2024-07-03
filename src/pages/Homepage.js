@@ -1,10 +1,10 @@
 import './Homepage.css';
-import waving from '../assets/waving-hand.svg';
+import greeting from '../assets/Greeting-pic.png';
 import { useEffect, useState, useRef } from 'react';
 
 export default function HomePage() { 
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "<Hi, I'm Alisha/>";
+  const fullText = "Hi, I'm Alisha";
   const timeoutRef = useRef(null);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function HomePage() {
         <h2 className='subheading-text'>I'm an aspiring Software Developer. I am currently interning at Bell and am incoming at Symend.</h2>
       </div>
       <div className='landing-svg'>
-        <img src={waving} alt="Waving hand" />
+        <img src={greeting} alt="Waving hand" />
       </div>
     </div>
   );
