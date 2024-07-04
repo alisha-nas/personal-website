@@ -1,74 +1,86 @@
 #portfolio-section {
-  color:black;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
   margin-bottom: 30px;
 }
 
 #portfolio-section h1 {
-  color: #333;
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .project-item {
-  color:black;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
+  background-color: #1e1e1e; /* Slightly lighter background for cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-item:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-.project-header {
+.project-image img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  height: 100%;
 }
 
-.project-header h3 {
-  margin: 0;
-}
-
-.github-link {
-  text-decoration: none;
-  color: #007bff;
-  padding: 5px 10px;
-  border: 1px solid #007bff;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.github-link:hover {
-  background-color: #007bff;
-  color: #fff;
+.project-content h3 {
+  margin-top: 0;
 }
 
 .project-description {
-  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .tech-stack {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 10px;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .tech-tag {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #00C853;
+  color: #ffffff;
   font-size: 0.9rem;
   padding: 5px 10px;
   border-radius: 5px;
-  margin-right: 8px;
-  margin-bottom: 8px;
+}
+
+.project-button {
+  align-self: flex-start;
+  text-decoration: none;
+  color: #00C853;
+  padding: 10px 15px;
+  border: 1px solid #00C853;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-button:hover {
+  background-color: #00C853;
+  color: #ffffff;
 }
