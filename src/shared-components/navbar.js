@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const text = "<Alisha Nasir/>";
-  
+
   return (
     <nav className="navbar">
       <div className="left-section">
