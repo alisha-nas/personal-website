@@ -1,3 +1,4 @@
+/* About.css */
 #about-section {
   padding: 20px;
   border-radius: 8px;
@@ -6,89 +7,52 @@
 }
 
 .about-content {
-  max-width: 1000px; /* Increased max-width for responsiveness */
+  max-width: 1000px;
   margin: 0 auto;
   padding: 40px;
   display: flex;
   justify-content: space-between;
+  gap: 40px; /* Space between cards */
 }
 
-.about-text {
-  flex: 1;
-  margin-right: 40px; /* Increased margin for spacing */
+.about-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Equal width for each card */
 }
 
-#about-section h1 {
+.about-card h2 {
+  font-size: 1.8rem;
   color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-#about-section p {
+.about-card p {
   font-size: 1.2rem;
-  line-height: 1.8;
+  line-height: 1.6;
   color: #666;
 }
 
-.skills-graphic {
-  flex: 1;
+.skill-icons, .hobby-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between icons */
 }
 
-.skills-list {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
+.skill-icons img, .hobby-icons img {
+  width: 60px; /* Adjust icon size */
+  height: 60px;
+  object-fit: contain;
 }
 
-.skills-list li {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 8px;
-}
-
-.skills-list li::before {
-  content: "\2022"; /* Use a bullet point for each list item */
-  color: #00C853; /* Customize bullet point color */
-  font-size: 1.2rem;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.skill {
-  margin-bottom: 16px; /* Increased margin between skills */
-}
-
-.skill-name {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 4px;
-}
-
-.skill-bar {
-  width: 100%;
-  background-color: #f0f0f0;
-  height: 12px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background-color: #00C853;
-}
-
-/* Adjustments for positioning */
-@media (min-width: 1200px) {
+/* Media query for responsiveness */
+@media (max-width: 768px) {
   .about-content {
-    max-width: 1200px; /* Adjust max-width as needed */
-  }
-  
-  .about-text {
-    margin-right: 80px; /* Increased margin for wider screens */
-  }
-  
-  .skills-graphic {
-    margin-left: 40px; /* Adjust margin for spacing */
+    flex-direction: column;
+    gap: 20px;
   }
 }
