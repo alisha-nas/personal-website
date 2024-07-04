@@ -1,38 +1,47 @@
 /* About.css */
 #about-section {
-  padding: 20px;
+  color: #e0e0e0; /* Light text */
+  padding: 40px 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
 
 .about-content {
+  font-family: "Source Code Pro";
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px;
   display: flex;
   justify-content: space-between;
   gap: 40px; /* Space between cards */
+  flex-wrap: wrap; /* Ensure responsiveness */
 }
 
 .about-card {
-  background-color: #ffffff;
-  padding: 20px;
+  background-color: #1e1e1e; /* Slightly lighter background for cards */
+  padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   flex: 1; /* Equal width for each card */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .about-card h2 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .about-card p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #666;
+  color: #b0b0b0;
 }
 
 .skill-icons, .hobby-icons {
@@ -47,6 +56,11 @@
   width: 60px; /* Adjust icon size */
   height: 60px;
   object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.skill-icons img:hover, .hobby-icons img:hover {
+  transform: scale(1.1);
 }
 
 /* Media query for responsiveness */
