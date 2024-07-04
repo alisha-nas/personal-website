@@ -2,10 +2,10 @@
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Ensure shooting stars don't create horizontal scrollbars */
+  overflow-x: hidden; /* Ensure no horizontal scrollbars */
   font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #121212; /* Dark background color */
+  color: #E0E0E0; /* Softer white text color */
 }
 
 .landing-container {
@@ -22,12 +22,12 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.7); /* Slightly darker overlay */
   z-index: 1;
 }
 
 .landing-content {
-  font-family: "Source Code Pro";
+  font-family: "Source Code Pro", monospace;
   display: flex;
   flex-direction: row; /* Ensure content aligns horizontally */
   align-items: center;
@@ -52,6 +52,7 @@ body, html {
   font-size: 3rem;
   font-weight: bold;
   position: relative; /* Ensure cursor position */
+  color: #ffffff; /* Pure white for greeting text */
 }
 
 .blinking-cursor {
@@ -80,15 +81,61 @@ body, html {
   margin-top: 10px;
 }
 
-.contact-button {
+.availability {
   margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #00C853;
-  border: none;
-  border-radius: 20px;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.availability-text {
+  margin-left: 10px;
   font-size: 1rem;
+  color: #ffffff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
   cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #00E676; /* Accent color when checked */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
 .landing-svg {

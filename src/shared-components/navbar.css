@@ -21,6 +21,7 @@
 
 .left-section { 
   font-family: "Source Code Pro";
+  cursor: pointer;
 }
 
 .navLinks li {
@@ -47,7 +48,7 @@
 }
 
 .navLinks li a:hover {
-  color: #00C853; /* Green hover color */
+  color: rgba(6, 251, 206)
 }
 
 .navLinks li a:hover::after {
