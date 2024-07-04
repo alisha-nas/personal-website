@@ -12,10 +12,8 @@ body, html {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 70px;
+  justify-content: center; /* Center content horizontally */
   height: 100vh;
-  overflow: hidden;
 }
 
 .overlay {
@@ -29,15 +27,19 @@ body, html {
 }
 
 .landing-content {
-  position: relative;
-  z-index: 2;
+  font-family: "Source Code Pro";
   display: flex;
+  flex-direction: row; /* Ensure content aligns horizontally */
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between landing-text and landing-svg */
   width: 80%;
+  max-width: 1200px; /* Adjust max width as needed */
+  padding: 0 20px; /* Adjust padding as needed */
+  z-index: 2;
 }
 
 .landing-text {
+  flex: 1; /* Take up remaining space */
   max-width: 600px;
 }
 
@@ -49,11 +51,32 @@ body, html {
 .greeting-text {
   font-size: 3rem;
   font-weight: bold;
+  position: relative; /* Ensure cursor position */
+}
+
+.blinking-cursor {
+  animation: blink-caret 0.75s step-end infinite; /* Adjust blinking speed and style */
+}
+
+.blinking-cursor.visible {
+  opacity: 1;
+}
+
+.blinking-cursor.hidden {
+  opacity: 0;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white; /* Adjust cursor color */
+  }
 }
 
 .subheading-text {
   font-size: 1.5rem;
-  color: #00C853;
   margin-top: 10px;
 }
 
@@ -69,8 +92,9 @@ body, html {
 }
 
 .landing-svg {
+  flex: 1; /* Take up remaining space */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* Align image to the right */
   align-items: center;
 }
 
@@ -78,46 +102,6 @@ body, html {
   width: 300px;  /* Adjust width as needed */
   height: 300px; /* Adjust height as needed */
 }
-
-/* Shooting Star Animation */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
-
-@keyframes shooting-star {
-  0% {
-    transform: translateY(0) translateX(0) scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100vh) translateX(100vw) scale(1);
-    opacity: 0;
-  }
-}
-
-.shooting-star {
-  position: absolute;
-  width: 2px;
-  height: 100px;
-  background: linear-gradient(white, transparent);
-  opacity: 0;
-  animation: shooting-star 1.5s ease-in-out infinite;
-}
-
-.shooting-star:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.shooting-star:nth-child(3) {
-  animation-delay: 1s;
-}
-
-/* Add more stars with different delays as needed */
 
 /* Ensure the entire page can scroll */
 body, html {
