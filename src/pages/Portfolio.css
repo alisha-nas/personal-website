@@ -1,6 +1,5 @@
 #portfolio-section {
   padding: 40px 20px;
-  background-color: #121212; /* Dark background */
   color: #e0e0e0; /* Light text */
   margin-bottom: 30px;
 }
@@ -21,7 +20,7 @@
 .project-item {
   display: flex;
   flex-direction: column;
-  background-color: #1e1e1e; /* Slightly lighter background for cards */
+  background-color: #242243; /* Dark card background for a sleek look */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   overflow: hidden;

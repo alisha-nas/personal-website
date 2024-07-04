@@ -1,7 +1,6 @@
 #experience-section {
   padding: 40px 20px;
   margin-bottom: 30px;
-  background-color: #121212; /* Dark background */
   color: #e0e0e0; /* Light text */
 }
 
@@ -24,7 +23,7 @@
   position: absolute;
   width: 4px;
   height: 100%;
-  background-color: #00C853; /* Timeline line color */
+  background-color: #F08080; /* Timeline line color */
   left: 50%;
   top: 0;
   transform: translateX(-50%);
@@ -58,8 +57,8 @@
 }
 
 .timeline-content {
+  background-color: #242243; /* Dark card background for a sleek look */
   font-family: "Source Code Pro";
-  background-color: #1e1e1e; /* Slightly lighter background for cards */
   color: #ffffff; /* Light text */
   padding: 20px;
   border-radius: 8px;
@@ -76,7 +75,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #00C853; /* Circle color */
+  background-color: #ffffff; /* Circle color */
   border-radius: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

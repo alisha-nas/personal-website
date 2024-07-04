@@ -1,17 +1,15 @@
 /* About.css */
 #about-section {
-  color: #e0e0e0; /* Light text */
   padding: 40px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .about-content {
-  font-family: "Source Code Pro";
-  max-width: 1000px;
+  font-family: "Source Code Pro", monospace;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px;
   display: flex;
   justify-content: space-between;
   gap: 40px; /* Space between cards */
@@ -19,12 +17,14 @@
 }
 
 .about-card {
-  background-color: #1e1e1e; /* Slightly lighter background for cards */
+  background-color: #242243; /* Dark card background for a sleek look */
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 12px; /* More rounded corners */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   flex: 1; /* Equal width for each card */
+  min-width: 300px; /* Ensure a minimum width for cards */
   transition: transform 0.3s, box-shadow 0.3s;
+  color: #FFFFFF; /* Light text color */
 }
 
 .about-card:hover {
@@ -33,15 +33,15 @@
 }
 
 .about-card h2 {
-  font-size: 2rem;
-  color: #ffffff;
+  font-size: 1.8rem;
+  color: #FFFFFF; /* Ensure header text is visible */
   margin-bottom: 15px;
 }
 
 .about-card p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
-  color: #b0b0b0;
+  color: #B0B0B0; /* Slightly lighter text for readability */
 }
 
 .skill-icons, .hobby-icons {
