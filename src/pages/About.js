@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-// import your icons here if needed
 
 const About = () => {
   return (

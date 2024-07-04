@@ -1,4 +1,32 @@
 .App {
+  position: relative; /* Ensure relative positioning for absolute children */
   text-align: center;
   background-color: #121121;
+}
+
+/* Shooting star animation */
+@keyframes shooting-star {
+  0% {
+    transform: translate(-100%, -100%) rotate(45deg) scale(0); /* Initial position and size */
+    opacity: 0; /* Start invisible */
+  }
+  50% {
+    transform: translate(50vw, 50vh) rotate(45deg) scale(1); /* Move across the screen and grow */
+    opacity: 1; /* Fade in */
+  }
+  100% {
+    transform: translate(100vw, 100vh) rotate(45deg) scale(0); /* Move off screen and shrink */
+    opacity: 0; /* Fade out */
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px; /* Adjust the width of the shooting star line */
+  height: 30px; /* Adjust the height of the shooting star line */
+  background-color: #fff; /* Star color */
+  transform: rotate(45deg); /* Initial rotation */
+  animation: shooting-star 6s linear infinite; /* Adjust animation duration */
 }

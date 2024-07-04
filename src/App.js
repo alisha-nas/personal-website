@@ -9,12 +9,12 @@ import Portfolio from './pages/Portfolio';
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <HomePage></HomePage>
-      <About></About>
-      <Experience></Experience>
-      <Portfolio></Portfolio>
-      <Contact></Contact>
+      <Navbar />
+      <HomePage />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }

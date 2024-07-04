@@ -1,5 +1,5 @@
 import './navbar.css';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import linkedin from '../assets/linkedIn-icon.svg';
 import github from '../assets/github-icon.svg';
 
