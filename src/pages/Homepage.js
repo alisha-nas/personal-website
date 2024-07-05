@@ -32,6 +32,10 @@ export default function HomePage() {
     };
   }, []);
 
+  const handleEmailRedirect = () => {
+    window.location.href = 'mailto:al.alishanasir@gmail.com'; // Replace with your email address
+  };
+
   const handleScroll = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -52,7 +56,7 @@ export default function HomePage() {
           <h2 className="subheading-text">I'm an aspiring software developer, and currently an SDE intern at Bell. Explore my projects and journey in the tech world.</h2>
           <div className="homepage-buttons">
             <button className="view-work" onClick={() => handleScroll('portfolio-section')}>View My Work</button>
-            <button className="contact-me" onClick={() => handleScroll('contact-section')}>Contact Me</button>
+            <button className="contact-me" onClick={handleEmailRedirect}>Contact Me</button>
           </div>
         </div>
         <div className="landing-svg">
