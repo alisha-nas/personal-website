@@ -32,6 +32,13 @@ export default function HomePage() {
     };
   }, []);
 
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div id="home-section" className="landing-container">
       <div className="overlay"></div>
@@ -43,10 +50,10 @@ export default function HomePage() {
             <span className={`blinking-cursor ${showCursor ? 'visible' : 'hidden'}`}>|</span>
           </h1>
           <h2 className="subheading-text">I'm an aspiring software developer, currently interning at Bell. Explore my projects and journey in the tech world.</h2>
-            <div className="homepage-buttons">
-              <button className="view-work">View My Work</button>
-              <button className="contact-me">Contact me</button>
-            </div>
+          <div className="homepage-buttons">
+            <button className="view-work" onClick={() => handleScroll('portfolio-section')}>View My Work</button>
+            <button className="contact-me" onClick={() => handleScroll('contact-section')}>Contact Me</button>
+          </div>
         </div>
         <div className="landing-svg">
           <img src={greeting} alt="Waving hand" />
