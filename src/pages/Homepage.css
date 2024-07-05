@@ -16,7 +16,6 @@ body, html {
   height: 100vh;
 }
 
-
 .landing-content {
   font-family: "Source Code Pro", monospace;
   display: flex;
@@ -97,36 +96,36 @@ body, html {
   height: 0;
 }
 
-.slider {
-  position: absolute;
+.homepage-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Align buttons horizontally */
+}
+
+.view-work, .contact-me {
+  margin: 0 10px;
+  padding: 12px 24px; /* Increased padding for better touch target */
+  font-size: 1rem;
+  background-color: #F08080; /* Accent color */
+  color: #fff;
+  border: none;
+  border-radius: 24px; /* Rounded corners */
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-  border-radius: 34px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
+.view-work:hover, .contact-me:hover {
+  background-color: #FF6B6B; /* Darker accent color on hover */
+  transform: translateY(-2px); /* Lift on hover for depth effect */
 }
 
-input:checked + .slider {
-  background-color: #00E676; /* Accent color when checked */
+.contact-me {
+  background-color: #FFBF00; /* Different color for Contact button */
 }
 
-input:checked + .slider:before {
-  transform: translateX(26px);
+.contact-me:hover {
+  background-color: #E64A19; /* Darker accent color on hover */
 }
 
 .landing-svg {

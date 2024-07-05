@@ -43,13 +43,10 @@ export default function HomePage() {
             <span className={`blinking-cursor ${showCursor ? 'visible' : 'hidden'}`}>|</span>
           </h1>
           <h2 className="subheading-text">I'm an aspiring software developer, currently interning at Bell. Explore my projects and journey in the tech world.</h2>
-          <div className="availability">
-            <label className="switch">
-              <input type="checkbox" checked={true}/>
-              <span className="slider"></span>
-            </label>
-            <span className="availability-text">Available for hire</span>
-          </div>
+            <div className="homepage-buttons">
+              <button className="view-work">View My Work</button>
+              <button className="contact-me">Contact me</button>
+            </div>
         </div>
         <div className="landing-svg">
           <img src={greeting} alt="Waving hand" />
