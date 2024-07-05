@@ -12,6 +12,7 @@ import sql from '../assets/mysql-3.svg';
 import mongo from '../assets/mongodb-icon-1.svg';
 
 const About = () => {
+
   return (
     <section id="about-section" className="about-container">
       <div className="about-content">

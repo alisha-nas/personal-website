@@ -1,5 +1,5 @@
 import './navbar.css';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import linkedin from '../assets/linkedIn-icon.svg';
 import github from '../assets/github-icon.svg';
 
@@ -20,9 +20,6 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="portfolio-section" spy={true} smooth={true} offset={-50} duration={500}>Portfolio</Link>
-        </li>
-        <li>
-          <Link to="contact-section" spy={true} smooth={true} offset={-50} duration={500}>Contact</Link>
         </li>
       </ul>
       <div className="social-icons">
