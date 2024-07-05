@@ -9,26 +9,29 @@ const Experience = () => {
         <div className="timeline-item left">
           <div className="timeline-content">
             <h3>Software Developer Intern</h3>
-            <p className="experience-date">Bell</p>
+            <p className="experience-date">05/24 - 08/24</p>
+            <p className="experience-description">Bell</p>
           </div>
         </div>
         <div className="timeline-item right">
           <div className="timeline-content">
             <h3>Programming Instructor</h3>
-            <p className="experience-date">While She is True</p>
+            <p className="experience-date">10/23 - Present</p>
+            <p className="experience-description">While She is True</p>
           </div>
         </div>
         <div className="timeline-item left">
           <div className="timeline-content">
             <h3>Code Sensei</h3>
-            <p className="experience-date">Code Ninjas</p>
+            <p className="experience-date">01/24 - 04/24</p>
+            <p className="experience-description">Code Ninjas</p>
           </div>
         </div>
         <div className="timeline-item right">
           <div className="timeline-content">
             <h3>Bachelor of Science in Computer Science</h3>
-            <p className="experience-date">University of Calgary</p>
-            <p className="experience-description">Expected Graduation: May 2026</p>
+            <p className="experience-date">Expected Graduation: May 2026</p>
+            <p className="experience-description">University of Calgary</p>
           </div>
         </div>
       </div>

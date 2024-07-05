@@ -91,6 +91,14 @@
   margin-right: 20px; /* Add margin to space the dot from the card */
 }
 
+.timeline-item.left .experience-date {
+  right: calc(100% + 20px); /* Adjust position to be right beside the dot */
+}
+
+.timeline-item.right .experience-date {
+  left: calc(100% + 20px); /* Adjust position to be right beside the dot */
+}
+
 .timeline-item:hover .timeline-content {
   transform: translateY(-10px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -100,6 +108,9 @@
   font-style: italic;
   color: #b0b0b0;
   margin-bottom: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .experience-description {
@@ -132,5 +143,10 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .experience-date {
+    right: calc(100% + 10px); /* Adjust position on mobile */
+    font-size: 0.8rem; /* Adjust font size for mobile */
   }
 }
