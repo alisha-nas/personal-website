@@ -49,7 +49,7 @@ export default function HomePage() {
             {displayedText}
             <span className={`blinking-cursor ${showCursor ? 'visible' : 'hidden'}`}>|</span>
           </h1>
-          <h2 className="subheading-text">I'm an aspiring software developer, currently interning at Bell. Explore my projects and journey in the tech world.</h2>
+          <h2 className="subheading-text">I'm an aspiring software developer, and currently an SDE intern at Bell. Explore my projects and journey in the tech world.</h2>
           <div className="homepage-buttons">
             <button className="view-work" onClick={() => handleScroll('portfolio-section')}>View My Work</button>
             <button className="contact-me" onClick={() => handleScroll('contact-section')}>Contact Me</button>
