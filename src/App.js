@@ -1,7 +1,6 @@
 import './App.css';
 import Navbar from './shared-components/navbar';
 import HomePage from './pages/homepage/Homepage';
-import Contact from './pages/contact/Contact';
 import Experience from './pages/experience/Experience';
 import About from './pages/about/About';
 import Portfolio from './pages/portfolio/Portfolio';
