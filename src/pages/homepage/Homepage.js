@@ -9,7 +9,7 @@ export default function HomePage() {
 
   useEffect(() => {
     let currentIndex = 0;
-    const typingSpeed = 100; // Adjust typing speed in milliseconds for smoother effect
+    const typingSpeed = 100; 
 
     const typeWriter = () => {
       if (currentIndex < fullText.length) {
@@ -23,8 +23,8 @@ export default function HomePage() {
     }, typingSpeed);
 
     const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev); // Toggle cursor visibility
-    }, 500); // Adjust blinking speed in milliseconds
+      setShowCursor(prev => !prev); 
+    }, 500); 
 
     return () => {
       clearInterval(interval);
@@ -33,7 +33,7 @@ export default function HomePage() {
   }, []);
 
   const handleEmailRedirect = () => {
-    window.location.href = 'mailto:al.alishanasir@gmail.com'; // Replace with your email address
+    window.location.href = 'mailto:al.alishanasir@gmail.com'; 
   };
 
   const handleScroll = (sectionId) => {

@@ -1,4 +1,4 @@
-/* About.css */
+
 #about-section {
   padding: 40px 20px;
   margin-bottom: 30px;
@@ -12,19 +12,19 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 40px; /* Space between cards */
-  flex-wrap: wrap; /* Ensure responsiveness */
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .about-card {
-  background-color: #242243; /* Dark card background for a sleek look */
+  background-color: #242243;
   padding: 30px;
-  border-radius: 12px; /* More rounded corners */
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  flex: 1; /* Equal width for each card */
-  min-width: 300px; /* Ensure a minimum width for cards */
+  flex: 1;
+  min-width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: #FFFFFF; /* Light text color */
+  color: #FFFFFF;
 }
 
 .about-card:hover {
@@ -34,79 +34,79 @@
 
 .about-card h2 {
   font-size: 1.8rem;
-  color: #FFFFFF; /* Ensure header text is visible */
+  color: #FFFFFF;
   margin-bottom: 15px;
 }
 
 .about-card p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #B0B0B0; /* Slightly lighter text for readability */
+  color: #B0B0B0;
 }
 
 .skill-icons {
   display: flex;
-  justify-content: flex-start; /* Align items to the start */
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px; /* Space between icons */
+  gap: 10px;
 }
 
 .tech-flair {
   display: flex;
   align-items: center;
-  padding: 10px 20px; /* Increased padding to fill more space */
+  padding: 10px 20px;
   background-color: transparent;
-  border: 1px solid #FFFFFF; /* White outline */
-  border-radius: 24px; /* Rounded corners */
+  border: 1px solid #FFFFFF;
+  border-radius: 24px;
   transition: transform 0.3s, border-color 0.3s;
 }
 
 .tech-flair:hover {
-  transform: translateY(-5px); /* Lift on hover */
-  border-color: #F08080; /* Accent color on hover */
+  transform: translateY(-5px);
+  border-color: #F08080;
 }
 
 .tech-flair img {
-  width: 40px; /* Increased icon size */
+  width: 40px;
   height: 40px;
-  margin-right: 10px; /* Space between icon and text */
+  margin-right: 10px;
 }
 
 .tech-flair span {
-  font-size: 1rem; /* Adjusted font size */
-  color: #FFFFFF; /* Text color */
+  font-size: 1rem;
+  color: #FFFFFF;
 }
 
 .hobby-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Space between hobbies */
+  gap: 10px;
 }
 
 .hobby {
   display: flex;
   align-items: center;
   background-color: transparent;
-  border: 1px solid #FFFFFF; /* White outline */
-  border-radius: 24px; /* Rounded corners */
-  padding: 10px 20px; /* Adjusted padding */
-  margin-bottom: 10px; /* Margin between hobbies */
+  border: 1px solid #FFFFFF;
+  border-radius: 24px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
   transition: transform 0.3s, border-color 0.3s;
 }
 
 .hobby:hover {
-  transform: translateY(-5px); /* Lift on hover */
-  border-color: #F08080; /* Accent color on hover */
+  transform: translateY(-5px);
+  border-color: #F08080;
 }
 
 .hobby-title {
-  font-size: 1rem; /* Adjusted font size */
-  margin-left: 10px; /* Space between emoji and title */
-  color: #FFFFFF; /* Text color */
+  font-size: 1rem;
+  margin-left: 10px;
+  color: #FFFFFF;
 }
 
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -118,6 +118,6 @@
   }
 
   .hobby {
-    min-width: 150px; /* Adjusted minimum width for hobbies */
+    min-width: 150px;
   }
 }
