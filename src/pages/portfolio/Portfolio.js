@@ -1,9 +1,9 @@
 import React from 'react';
 import './Portfolio.css';
-import lifeline from '../assets/Lifeline.png'; // Example image imports
-import copilot from '../assets/copilot.png';
-import giveback from '../assets/Giveback.png';
-import checkout from '../assets/checkout.png';
+import lifeline from '../../assets/Lifeline.png'; 
+import copilot from '../../assets/copilot.png';
+import giveback from '../../assets/Giveback.png';
+import checkout from '../../assets/checkout.png';
 
 const Portfolio = () => {
   return (

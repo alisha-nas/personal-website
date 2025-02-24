@@ -1,15 +1,14 @@
-// About.js
 import React from 'react';
 import './About.css';
-import python from '../assets/python-5.svg';
-import java from '../assets/java-14.svg';
-import js from '../assets/logo-javascript.svg';
-import ts from '../assets/typescript.svg';
-import react from '../assets/react-2.svg';
-import git from '../assets/git.svg';
-import figma from '../assets/figma-icon.svg';
-import sql from '../assets/mysql-3.svg';
-import mongo from '../assets/mongodb-icon-1.svg';
+import python from '../../assets/python-5.svg';
+import java from '../../assets/java-14.svg';
+import js from '../../assets/logo-javascript.svg';
+import ts from '../../assets/typescript.svg';
+import react from '../../assets/react-2.svg';
+import git from '../../assets/git.svg';
+import figma from '../../assets/figma-icon.svg';
+import sql from '../../assets/mysql-3.svg';
+import mongo from '../../assets/mongodb-icon-1.svg';
 
 const About = () => {
 

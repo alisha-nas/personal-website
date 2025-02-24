@@ -1,5 +1,5 @@
 import './Homepage.css';
-import greeting from '../assets/Greeting-pic.png';
+import greeting from '../../assets/Greeting-pic.png';
 import { useEffect, useState } from 'react';
 
 export default function HomePage() {
