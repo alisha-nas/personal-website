@@ -16,7 +16,7 @@ const Experience = () => {
       <div className="timeline-item left">
           <div className="timeline-content">
             <h3>Software Developer Intern</h3>
-            <p className="experience-date">01/24 - 04/24</p>
+            <p className="experience-date">01/25 - 04/25</p>
             <p className="experience-description">RBC</p>
           </div>
         </div>
