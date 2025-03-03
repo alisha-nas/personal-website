@@ -14,18 +14,6 @@ body, html {
   height: 100vh;
 }
 
-.landing-content {
-  font-family: "Source Code Pro", monospace;
-  display: flex;
-  flex-direction: row; /* Ensure content aligns horizontally */
-  align-items: center;
-  justify-content: space-between; /* Space between landing-text and landing-svg */
-  width: 80%;
-  max-width: 1200px; /* Adjust max width as needed */
-  padding: 0 20px; /* Adjust padding as needed */
-  z-index: 2;
-}
-
 .landing-text {
   flex: 1; /* Take up remaining space */
   max-width: 600px;
@@ -124,4 +112,26 @@ body, html {
 
 #home-section {
   min-height: 100vh;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #F08080; /* Accent color */
+}
+
+.landing-content {
+  font-family: "Source Code Pro", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
