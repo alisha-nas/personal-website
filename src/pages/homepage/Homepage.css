@@ -2,20 +2,20 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #121212; /* Dark background color */
-  color: #E0E0E0; /* Softer white text color */
+  background-color: #121212;
+  color: #E0E0E0; 
 }
 
 .landing-container {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center; 
   height: 100vh;
 }
 
 .landing-text {
-  flex: 1; /* Take up remaining space */
+  flex: 1;
   max-width: 600px;
 }
 
@@ -27,12 +27,12 @@ body, html {
 .greeting-text {
   font-size: 3rem;
   font-weight: bold;
-  position: relative; /* Ensure cursor position */
-  color: #ffffff; /* Pure white for greeting text */
+  position: relative; 
+  color: #ffffff; 
 }
 
 .blinking-cursor {
-  animation: blink-caret 0.75s step-end infinite; /* Adjust blinking speed and style */
+  animation: blink-caret 0.75s step-end infinite; 
 }
 
 .blinking-cursor.visible {
@@ -48,7 +48,7 @@ body, html {
     border-color: transparent;
   }
   50% {
-    border-color: white; /* Adjust cursor color */
+    border-color: white; 
   }
 }
 
@@ -60,52 +60,51 @@ body, html {
 .homepage-buttons {
   margin-top: 20px;
   display: flex;
-  justify-content: center; /* Align buttons horizontally */
+  justify-content: center; 
 }
 
 .view-work, .contact-me {
   margin: 0 10px;
-  padding: 12px 24px; /* Increased padding for better touch target */
+  padding: 12px 24px; 
   font-size: 1rem;
-  color: #F08080; /* Accent color for text */
-  background-color: transparent; /* Transparent background */
-  border: 2px solid #F08080; /* Border with accent color */
-  border-radius: 24px; /* Rounded corners */
+  color: #F08080; 
+  background-color: transparent; 
+  border: 2px solid #F08080; 
+  border-radius: 24px; 
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .view-work:hover {
-  background-color: #F08080; /* Accent color on hover */
-  color: #121212; /* Dark background color for text on hover */
-  transform: translateY(-2px); /* Lift on hover for depth effect */
+  background-color: #F08080; 
+  color: #121212; 
+  transform: translateY(-2px); 
 }
 
 .contact-me {
-  border-color: #4A90E2; /* Blue border color */
-  color: #4A90E2; /* Blue text color */
+  border-color: #4A90E2; 
+  color: #4A90E2; 
 }
 
 .contact-me:hover {
-  background-color: #4A90E2; /* Blue background color on hover */
-  color: #121212; /* Dark background color for text on hover */
-  transform: translateY(-2px); /* Lift on hover for depth effect */
+  background-color: #4A90E2; 
+  color: #121212; 
+  transform: translateY(-2px); 
 }
 
 .landing-svg {
-  flex: 1; /* Take up remaining space */
+  flex: 1; 
   display: flex;
-  justify-content: flex-end; /* Align image to the right */
+  justify-content: flex-end; 
   align-items: center;
 }
 
 .landing-svg img {
-  width: 300px;  /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
+  width: 300px;  
+  height: 300px;
 }
 
-/* Ensure the entire page can scroll */
 body, html {
   height: 100%;
 }
@@ -125,7 +124,7 @@ body, html {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #F08080; /* Accent color */
+  border: 3px solid #F08080; 
 }
 
 .landing-content {
